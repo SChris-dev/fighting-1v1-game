@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="gameContainer">
+        <div class="gameStats">
+            <div style="position: relative; height: 30px; width: 100%; display: flex; justify-content: flex-end;">
+                <div class="playerHealth"></div>
+                <div id="playerHealth" style="position: absolute; background-color: yellow; top: 0; bottom: 0; right: 0; width: 100%;"></div>
+            </div>
+            <div class="gameTimer" id="gameTimer">10</div>
+            <div style="position: relative; height: 30px; width: 100%;">
+                <div class="enemyHealth"></div>
+                <div id="enemyHealth" style="position: absolute; background-color: yellow; top: 0; bottom: 0; left: 0; right: 0;"></div>
+            </div>
+        </div>
+        <div 
+        id="displayText"
+        style="position: absolute; color: white; display: flex; align-items: center; justify-content: center; top: 0; left: 0; bottom: 0; right: 0; display: none;">Tie</div>
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
